@@ -10,39 +10,49 @@ document.addEventListener("DOMContentLoaded", function () {
                 let gameType = this.getAttribute("data-type");
                 alert(`You clicked ${gameType}`);
             }
-        });
-    });
+        })
 
-function runGame() {
-
-}
-
-function checkAnswer() {
+        /**
+         * The main game "loop", called when the script is first loaded
+         * and after the user's answer has been processed         * 
+         */
 
 
-}
+        function runGame() {
+            // Creates two random numbers between 1 and 25
+            let num1 = Math.floor(Math.random(0) * 25) + 1;
+            let num2 = Math.floor(Math.random(0) * 25) + 1;
+        }
 
-function calculateCorrectAnswer() {
+        
+        function checkAnswer() {
 
-}
 
-function incrementScore() {
 
-}
+        }
 
-function incrementWrongAnswer() {
+        function calculateCorrectAnswer() {
 
-}
+        }
 
-function displayAdditionQuestion() {
+        function incrementScore() {
 
-}
+        }
 
-function displaySubtractQuestion() {
+        function incrementWrongAnswer() {
 
-}
+        }
 
-function displayMultiplyQuestion() {
+        function displayAdditionQuestion() {
 
-}
+        }
 
+        function displaySubtractQuestion() {
+
+        }
+
+        function displayMultiplyQuestion() {
+
+        }
+    }
+});
